@@ -1,25 +1,24 @@
 var katzDeliLine = [];
+let number = 0;
 
-function takeANumber(currentLine, person){
-  let number = 0;
-  currentLine.push(person);
-  for(let i = 0; i < currentLine.length; i++){
-    number = i + 1;
-  }
-  return "Welcome, " + person + ". You are number " + number + " in line.";
+function takeANumber(currentLine){
+  number = number + 1;
+  currentLine.push(number);
+  
+  return "You are number " + number + ".";
 }
 
 function nowServing(currentLine){
   var customer = currentLine.shift();
   
-  if(currentLine == ''){
+  if(currentLine.length === 0){
     return "There is nobody waiting to be served!";
   }
   return customer;
 }
 
 function currentLine(currentLine){
-  if(currentLine == ''){
+  if(currentLine.length === 0){
     return "The line is currently empty."
   }
   let s = "";
@@ -29,5 +28,6 @@ function currentLine(currentLine){
     line.push(item);
     s = line.toString().replace(/,/g, ", ");
   }
+  line.join(', ')
   return "The line is currently: " + s;
 }
