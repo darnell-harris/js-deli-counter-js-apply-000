@@ -1,11 +1,8 @@
 
 var katzDeliLine = [];
 
-function takeANumber(currentLine){
-  
-  currentLine.push(number);
-  
-  return "You are number " + number + ".";
+function takeANumber(currentLine, person){
+
 }
 
 function nowServing(currentLine){
