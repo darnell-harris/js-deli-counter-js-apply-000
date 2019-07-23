@@ -16,7 +16,7 @@ function nowServing(currentLine){
   if(currentLine.length === 0){
     return "There is nobody waiting to be served!";
   }
-  return customer;
+  return "Currently serving " + customer;
 }
 
 function currentLine(currentLine){
