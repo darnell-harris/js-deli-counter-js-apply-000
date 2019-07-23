@@ -2,7 +2,7 @@
 var katzDeliLine = [];
 
 function takeANumber(currentLine, person){
-
+  
 }
 
 function nowServing(currentLine){
