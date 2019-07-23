@@ -2,7 +2,12 @@
 var katzDeliLine = [];
 
 function takeANumber(currentLine, person){
-  
+  let number = 0;
+  currentLine.push(person);
+  for(let i = 0; i < currentLine.length; i++){
+    number = i + 1;
+  }
+  return "Welcome, " + person + ". You are number " + number + " in line.";
 }
 
 function nowServing(currentLine){
