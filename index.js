@@ -1,8 +1,8 @@
+
 var katzDeliLine = [];
-let number = 0;
 
 function takeANumber(currentLine){
-  number = number + 1;
+  
   currentLine.push(number);
   
   return "You are number " + number + ".";
